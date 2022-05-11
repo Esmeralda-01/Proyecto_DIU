@@ -1,0 +1,125 @@
+
+header {
+  display: flex;
+  min-height: 70px;
+  background-color: #109E49;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.opciones {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ddd;
+  
+}
+
+.nombre-empresa{
+  display: flex;
+  min-height: 20px;
+  background-color: #109E49;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+button a:hover{
+  color: #FFD800;
+}
+
+nav li a {
+  align-items: center;
+  font-weight: 600;
+  padding-right: 10px;
+  text-decoration: none;
+  color: #ddd;
+}
+
+nav li a:hover {
+  color: #FFD800;
+}
+
+nav a:hover {
+  color: #FFD800;
+}
+
+nav a img{
+  width: 10%;
+  height: 10%;
+}
+
+@media (max-width:500px) {
+  header {
+      flex-direction: column;
+  }
+
+  nav {
+      padding: 10px 0px;
+  }
+}
+
+/* The dropdown container */
+.dropdown {
+  float: right;
+  overflow: hidden;
+  padding-right: 100px;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
