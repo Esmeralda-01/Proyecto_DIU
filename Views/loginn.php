@@ -15,7 +15,7 @@ include(VIEWS_PATH . "header.php");
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-7 d-flex justify-content-center mt-4">
-                    <img class="img-fluid" width="80%" alt="Imagen de inicio" src="<?php echo IMG_PATH;?>index.jpg" />
+                    <img class="img-fluid" width="80%" alt="Imagen de inicio" src="<?php echo IMG_PATH;?>inicio.jpg" />
                 </div>
                 <div class="col-md-5 mt-4 ">
 
