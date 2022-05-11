@@ -15,22 +15,7 @@ require_once(CONTROLLER_PATH . "viajes.php");
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-3">
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Perfil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo VIEWS_PATH; ?>admin/gestion_viajes.php">Viajes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="<?php echo VIEWS_PATH; ?>login.php?info=2">Cerrar sesión</a>
-                </li>
-            </ul>
-        </div>
+        
         <div class="col-md-9">
             <div class="jumbotron">
                 <h2>
