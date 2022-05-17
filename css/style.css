@@ -21,7 +21,6 @@ header {
   min-height: 20px;
   background-color: #109E49;
   justify-content: space-between;
-  align-items: center;
   padding: 10px;
 }
 
@@ -46,7 +45,6 @@ button a:hover{
 }
 
 nav li a {
-  align-items: center;
   font-weight: 600;
   padding-right: 10px;
   text-decoration: none;
@@ -78,7 +76,7 @@ nav a img{
 
 /* The dropdown container */
 .dropdown {
-  float: right;
+  display: flex;
   overflow: hidden;
   padding-right: 100px;
 }
