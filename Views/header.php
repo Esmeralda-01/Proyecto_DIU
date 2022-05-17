@@ -30,7 +30,7 @@
                             <li class="nav-item dropdown">
                              <a class="opciones dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Nombre de usuario</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#" class="dropdown-item"></a></li>
+                                    <li><a href="#" class="dropdown-item"></a>Cerrar Sessión</li>
                                     <li><a href="#" class="dropdown-item"></a></li>
                                 </ul>
                              </li>
