@@ -46,8 +46,8 @@ nav a:hover {
 
 .btn {
     background-color: #109E49!important;
-    margin-left: 80%;
-    margin-right: 5%;
+    margin-left: 73%;
+    margin-right: 22%;
     margin-bottom: 2%;
 }
 
@@ -60,4 +60,14 @@ nav a:hover {
 #hijo {
     margin: 0% auto;
     text-align: justify;
+}
+
+.border-primary {
+    border-color: #109E49!important;
+}
+
+table {
+    width: 70%!important;
+    margin-left: 10%!important;
+    align-items: center!important;
 }
