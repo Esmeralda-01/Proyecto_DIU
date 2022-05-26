@@ -7,7 +7,7 @@ define('CSS_PATH', '../../css/');
 define('JS_PATH', '../../js/');
 define('IMG_PATH', '../../img/');
 define('CONFIG_PATH', '../../config/');
-include(VIEWS_PATH . "user/header.php");
+include(VIEWS_PATH . "header.php");
 ?>
 <h1 class="d-flex justify-content-center">Bienvenido a Doctapp</h1>
 <?php

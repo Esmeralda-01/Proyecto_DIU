@@ -9,6 +9,7 @@ if (!defined('VIEWS_PATH')) {
 }
 
 require_once(LIBRARIES_PATH . "conexion.php");
+
 function getAllMedicamentos()
 {
     $db = Conexion::getConnection();

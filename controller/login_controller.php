@@ -5,6 +5,7 @@ define('VIEWS_PATH', '../views/');
 define('LIBRARIES_PATH', '../libraries/');
 
 require_once(LIBRARIES_PATH."Conexion.php");
+
 $db = Conexion::getConnection();
 $query = "SELECT * FROM usuarios WHERE correo = '" . $_POST["correo"] . "' AND clave = '" . $_POST["clave"] . "' ";
 $result = $db->query($query);

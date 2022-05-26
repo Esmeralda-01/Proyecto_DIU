@@ -7,7 +7,7 @@ define('CSS_PATH', '../../css/');
 define('JS_PATH', '../../js/');
 define('IMG_PATH', '../../img/');
 define('CONFIG_PATH', '../../config/');
-include(VIEWS_PATH . "user/header.php");
+include(VIEWS_PATH . "header.php");
 require_once(CONTROLLER_PATH . "doctappdb_controller.php");
 ?>
 <h1>Citas</h1>
