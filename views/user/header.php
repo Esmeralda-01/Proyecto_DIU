@@ -11,7 +11,8 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="<?php echo VIEWS_PATH; ?>user/user_home.php">Doctapp</a>
+  <img class="logo"src="<?php echo IMG_PATH; ?>icono.png" alt="Imagen de la empresa Doctapp">
+    <a class="navbar-brand nombre-empresa" href="<?php echo VIEWS_PATH; ?>user/user_home.php">Doctapp</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -25,8 +26,8 @@
             Citas
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="<?php echo VIEWS_PATH; ?>user/user_citas_consulta.php">Consultar citas</a></li>
-            <li><a class="dropdown-item" href="<?php echo VIEWS_PATH; ?>user/user_citas_agregar.php">Agendar cita</a></li>
+            <li><a class="dropdown-item nombre-empresa" href="<?php echo VIEWS_PATH; ?>user/user_citas_consulta.php">Consultar citas</a></li>
+            <li><a class="dropdown-item nombre-empresa" href="<?php echo VIEWS_PATH; ?>user/user_citas_agregar.php">Agendar cita</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -34,7 +35,7 @@
             Nombre usuario
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+            <li><a class="dropdown-item nombre-empresa" href="#">Cerrar sesión</a></li>
           </ul>
         </li>
       </ul>
