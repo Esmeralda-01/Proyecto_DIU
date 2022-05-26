@@ -43,3 +43,21 @@ nav a:hover {
         padding: 10px 0px !important;
     }
 }
+
+.btn {
+    background-color: #109E49!important;
+    margin-left: 80%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+}
+
+#padre {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hijo {
+    margin: 0% auto;
+    text-align: justify;
+}
