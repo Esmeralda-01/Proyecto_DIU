@@ -9,11 +9,11 @@
 
 .nombre-empresa {
     display: flex !important;
-    min-height: 20px;
-    background-color: #109E49;
+    min-height: 20px!important;
+    background-color: #109E49!important;
     justify-content: space-between!important;
-    align-items: center;
-    padding: 10px;
+    align-items: center!important;
+    padding: 10px!important;
 }
 
 .logo {
@@ -26,28 +26,15 @@ a {
     color: white !important;
 }
 
-nav li a {
-    align-items: center;
-    font-weight: 600;
-    padding-right: 10px;
-    text-decoration: none;
-    color: #ddd;
-}
-
 nav a:hover {
     color: #FFD800!important;
 }
 
-nav a img {
-    width: 10%;
-    height: 10%;
-}
-
 @media (max-width:500px) {
     header {
-        flex-direction: column;
+        flex-direction: column !important;
     }
     nav {
-        padding: 10px 0px;
+        padding: 10px 0px !important;
     }
 }
