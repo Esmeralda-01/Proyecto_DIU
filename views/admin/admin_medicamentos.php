@@ -171,6 +171,7 @@ require_once(CONTROLLER_PATH . "doctappdb_controller.php");
         </div>
     </div>
 </div>
+
 </div>
 <?php
 include(VIEWS_PATH . "footer.php");

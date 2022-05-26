@@ -61,3 +61,13 @@ nav a:hover {
     margin: 0% auto;
     text-align: justify;
 }
+
+.border-primary {
+    border-color: #109E49!important;
+}
+
+table {
+    width: 70%!important;
+    margin-left: 10%!important;
+    align-items: center!important;
+}
