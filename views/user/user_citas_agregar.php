@@ -10,9 +10,11 @@ define('CONFIG_PATH', '../../config/');
 include(VIEWS_PATH . "user/header.php");
 require_once(CONTROLLER_PATH . "doctappdb_controller.php");
 ?>
+
+<div id="padre">
 <h1>Asignación de citas</h1>
 <p>En esta sección podrá agenadar una nueva cita.</p>
-<div class="card" style="width: 50rem;">
+<div class="card" style="width: 50rem;" id="hijo">
   <div class="card-body">
     <div class="container">
       <h5 class="card-title">Datos del paciente</h5>
@@ -60,6 +62,7 @@ require_once(CONTROLLER_PATH . "doctappdb_controller.php");
       </form>
     </div>
   </div>
+</div>
 </div>
 
 <?php
