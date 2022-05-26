@@ -10,12 +10,12 @@ define('CONFIG_PATH', '../../config/');
 include(VIEWS_PATH . "header.php");
 require_once(CONTROLLER_PATH . "doctappdb_controller.php");
 ?>
-<h1>Formulas medicas</h1>
+<h1>Fórmulas médicas</h1>
 <p>En esta sección encontrará todas sus formulas medicas, aquí podra consultarlas o eliminarlas</p>
 <table class="table table-bordered border-primary">
   <thead>
     <tr>
-      <th>Nombre del medicamento/formula</th>
+      <th>Nombre del medicamento/fórmula</th>
       <th>Abrir</th>
       <th>Eliminar</th>
     </tr>
@@ -29,7 +29,7 @@ require_once(CONTROLLER_PATH . "doctappdb_controller.php");
         //Para enviar mas de un parametro se usa ?
     ?>
         <tr>
-          <td><?php echo $medicamento["nombre"]; ?></td>
+          <td><?php echo $medicamento["medicamento"]; ?></td>
           <td>
             <a href="?id=<?php echo $viaje["id"]; ?>" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <i class="fa-solid fa-folder-open"></i>
