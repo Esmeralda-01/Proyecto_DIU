@@ -17,7 +17,8 @@
 }
 
 .navbar-nav {
-    padding: 10px!important;
+    justify-content: space-between!important;
+    margin-left: 60%!important;
 }
 
 .logo {
