@@ -10,6 +10,8 @@ define('CONFIG_PATH', '../../config/');
 include(VIEWS_PATH . "user/header.php");
 require_once(CONTROLLER_PATH . "doctappdb_controller.php");
 ?>
+
+<div id="padre">
 <h1>Fórmulas médicas</h1>
 <p>En esta sección encontrará todas sus formulas medicas, aquí podra consultarlas o eliminarlas</p>
 <table class="table table-bordered border-primary">
@@ -118,6 +120,7 @@ require_once(CONTROLLER_PATH . "doctappdb_controller.php");
       </div>
     </div>
   </div>
+</div>
 </div>
 <?php
 include(VIEWS_PATH . "footer.php");
