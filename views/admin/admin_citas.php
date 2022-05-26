@@ -10,6 +10,7 @@ define('CONFIG_PATH', '../../config/');
 include(VIEWS_PATH . "admin/header.php");
 require_once(CONTROLLER_PATH . "doctappdb_controller.php");
 ?>
+<div id="padre">
 <h1>Citas</h1>
 <p>En esta sección encotrará todas las citas que han sido agendadas y también podrá cancelarlas.</p>
 <?php
@@ -36,7 +37,7 @@ if ($result != null) {
     }
 }
 ?>
-<div class="card" style="width: 70rem;">
+<div class="card" style="width: 70rem;" id="hijo">
     <div class="card-body">
         <div class="container">
             <div class="row">
@@ -111,6 +112,7 @@ if ($result != null) {
       </div>
     </div>
   </div>
+</div>
 </div>
 <?php
 include(VIEWS_PATH . "footer.php");
