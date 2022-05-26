@@ -8,7 +8,7 @@ define('JS_PATH', '../../js/');
 define('IMG_PATH', '../../img/');
 define('CONFIG_PATH', '../../config/');
 include(VIEWS_PATH . "user/header.php");
-require_once(CONTROLLER_PATH . "medica_controller.php");
+require_once(CONTROLLER_PATH . "doctappdb_controller.php");
 ?>
 <h1>Asignación de citas</h1>
 <p>En esta sección podrá agenadar una nueva cita.</p>
