@@ -71,3 +71,31 @@ table {
     margin-left: 10%!important;
     align-items: center!important;
 }
+
+.container2 {
+    margin-top: 10%;
+    margin-left: 60%;
+    margin-right: 10%;
+}
+
+.btn2 {
+    background-color: #109E49!important;
+    margin-left: 55%;
+    width: auto;
+    height: auto;
+    border-radius: 0.25rem;
+}
+
+a .color-link {
+    color: black!important;
+}
+
+.btn-outline-success {
+    color: white;
+}
+
+.container3 {
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 10%;
+}
