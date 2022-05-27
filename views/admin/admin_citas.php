@@ -97,14 +97,22 @@ if ($result != null) {
         </div>
     </div>
 </div>
-<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Eliminar
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Eliminar fórmula médica</h5>
+        <h5 class="modal-title" id="staticBackdropLabel">Eliminar cita médica</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ¿Esta seguro que quiere eliminar esta fórmula médica?
+      ¿Esta seguro que quiere eliminar esta fórmula médica?
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
@@ -112,7 +120,6 @@ if ($result != null) {
       </div>
     </div>
   </div>
-</div>
 </div>
 <?php
 include(VIEWS_PATH . "footer.php");
