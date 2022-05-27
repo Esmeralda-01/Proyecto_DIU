@@ -9,6 +9,8 @@ define('IMG_PATH', '../img/');
 define('CONFIG_PATH', '../config/');
 include(VIEWS_PATH . "header.php");
 ?>
+
+<div class="container3">
 <form>
     <div class="mb-3">
         <label for="recipient-name" class="col-form-label">Nombre</label>
@@ -35,8 +37,9 @@ include(VIEWS_PATH . "header.php");
         <input type="number" class="form-control" id="message-text"></input>
         <div id="emailHelp" class="form-text">Ingrese el número de identificación del paciente.</div>
     </div>
-    <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+    <button type="submit" class="btn2 btn-outline-success mt-4">Iniciar sesión</button>
 </form>
+</div>
 <?php
 include(VIEWS_PATH . "footer.php");
 ?>

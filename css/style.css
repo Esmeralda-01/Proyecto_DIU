@@ -74,7 +74,7 @@ table {
 
 .container2 {
     margin-top: 10%;
-    margin-left: 70%;
+    margin-left: 60%;
     margin-right: 10%;
 }
 
@@ -83,6 +83,7 @@ table {
     margin-left: 55%;
     width: auto;
     height: auto;
+    border-radius: 0.25rem;
 }
 
 a .color-link {
@@ -91,4 +92,10 @@ a .color-link {
 
 .btn-outline-success {
     color: white;
+}
+
+.container3 {
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 10%;
 }
