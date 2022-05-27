@@ -35,23 +35,25 @@ if (isset($_GET["info"])) {
     }
 }
 ?>
-<form action="<?php echo VIEWS_PATH; ?>registro.php" method="POST">
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Correo</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="correo">
+<div class="container2">
+    <form action="<?php echo VIEWS_PATH; ?>registro.php" method="POST">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="correo">
         <div id="emailHelp" class="form-text">Ingrese su correo.</div>
-    </div>
-    <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" name="clave">
-        <div id="passwordHelp" class="form-text">Ingrese su contraseña.</div>
-    </div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" name="clave">
+            <div id="passwordHelp" class="form-text">Ingrese su contraseña.</div>
+        </div>
 
-    <button type="submit" class="btn btn-primary">Iniciar sesión</button>
-    <p class="mt-2">¿Aún no tienes cuenta?
-        <a href="<?php echo VIEWS_PATH; ?>registro.php">Registrarme</a>
-    </p>
-</form>
+        <button type="submit" class="btn2 btn-outline-success mt-4">Iniciar sesión</button>
+            <p class="mt-2">¿Aún no tienes cuenta?
+            <a href="<?php echo VIEWS_PATH; ?>registro.php">Registrarme</a>
+            </p>
+    </form>
+</div>
 <?php
 include(VIEWS_PATH . "footer.php");
 ?>

@@ -37,7 +37,7 @@ if ($result != null) {
     }
 }
 ?>
-<div class="card" style="width: 70rem;" id="hijo">
+<div class="card" style="width: 70rem; border-color:green" id="hijo">
     <div class="card-body">
         <div class="container">
             <div class="row">

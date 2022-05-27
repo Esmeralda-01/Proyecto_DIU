@@ -71,3 +71,24 @@ table {
     margin-left: 10%!important;
     align-items: center!important;
 }
+
+.container2 {
+    margin-top: 10%;
+    margin-left: 70%;
+    margin-right: 10%;
+}
+
+.btn2 {
+    background-color: #109E49!important;
+    margin-left: 55%;
+    width: auto;
+    height: auto;
+}
+
+a .color-link {
+    color: black!important;
+}
+
+.btn-outline-success {
+    color: white;
+}
