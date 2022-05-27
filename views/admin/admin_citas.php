@@ -80,31 +80,7 @@ require_once(CONTROLLER_PATH . "doctappdb_controller.php");
                     </div>
                 </div>
             </div>
-    <?php
-        }
-    }
-    ?>
-
-    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Eliminar fórmula médica</h5>
-                </div>
-                <div class="modal-body">
-                    ¿Esta seguro que quiere eliminar esta fórmula médica?
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary">Eliminar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<<<<<<< HEAD
-
-<!-- Button trigger modal -->
+            <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
   Eliminar
 </button>
@@ -127,8 +103,12 @@ require_once(CONTROLLER_PATH . "doctappdb_controller.php");
     </div>
   </div>
 </div>
-=======
->>>>>>> cb5709ea774d7134b6bf1f48bae814959f07c67f
+    <?php
+        }
+    }
+    ?>
+
+
 <?php
 include(VIEWS_PATH . "footer.php");
 ?>
