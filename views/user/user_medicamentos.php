@@ -24,21 +24,21 @@ require_once(CONTROLLER_PATH . "doctappdb_controller.php");
   </thead>
   <tbody>
     <?php
-    $result = getAllMedicamentos();
+    $result = getAllFormulas();
     if ($result != null) {
       //Vamos a recorrer la bd
-      while ($medicamento = mysqli_fetch_assoc($result)) {
+      while ($formula = mysqli_fetch_assoc($result)) {
         //Para enviar mas de un parametro se usa ?
     ?>
         <tr>
-          <td><?php echo $medicamento["medicamento"]; ?></td>
+          <td><?php echo $formula["medicamento"]; ?></td>
           <td>
-            <a href="?id=<?php echo $viaje["id"]; ?>" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <a href="?id=<?php echo $formula["id_formula"]; ?>" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <i class="fa-solid fa-folder-open"></i>
             </a>
           </td>
           <td>
-            <a href="?id=<?php echo $viaje["id"]; ?>&elimina=1" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            <a href="?id=<?php echo $formula["id_formula"]; ?>&elimina=1" data-bs-toggle="modal" data-bs-target="#exampleModal1">
               <i class="fa fa-trash" aria-hidden="true"></i>
             </a>
           </td>
