@@ -50,7 +50,7 @@ if (isset($_GET["info"])) {
 
         <button type="submit" class="btn2 btn-outline-success mt-4">Iniciar sesión</button>
             <p class="mt-2">¿Aún no tienes cuenta?
-            <a href="<?php echo VIEWS_PATH; ?>registro.php">Registrarme</a>
+            <a style="color:blue!important"href="<?php echo VIEWS_PATH; ?>registro.php">Registrarme</a>
             </p>
     </form>
 </div>
