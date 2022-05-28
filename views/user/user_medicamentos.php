@@ -34,7 +34,7 @@ require_once(CONTROLLER_PATH . "doctappdb_controller.php");
           <td><?php echo $formula["medicamento"]; ?></td>
           <td>
             <a href="?id=<?php echo $formula["id_formula"]; ?>" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <i class="fa-solid fa-folder-open"></i>
+            <i class="fa-solid fa-folder-open"></i>
             </a>
           </td>
           <td>
