@@ -10,11 +10,11 @@ if (!defined('VIEWS_PATH')) {
 
 require_once(LIBRARIES_PATH . "conexion.php");
 
-function getAllFormulas()
+function getAllFormulas($id)
 {
     $db = Conexion::getConnection();
     //crear variable para hacer consultas SQL
-    $queryFormulas = "SELECT * FROM formulas_medicas";
+    $queryFormulas = "SELECT * FROM formulas_medicas where id_user=".$id;
     $result = $db->query($queryFormulas);
     return $result;
 }

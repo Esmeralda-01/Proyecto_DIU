@@ -14,7 +14,7 @@ function getAllFormulas()
 {
     $db = Conexion::getConnection();
     //crear variable para hacer consultas SQL
-    $queryFormulas = "SELECT medicamento,cantidad, tiempo_horas, tiempo_dias id_formula,u.nombre, u.telefono, u.correo, u.cc, d.nombre_doctor, d.consultorio, m.ubicacion, m.nombre_centro FROM formulas_medicas f INNER JOIN usuarios u on f.id_user = u.id_user INNER JOIN citas c on c.id_user = u.id_user INNER JOIN centro_medico m on c.id_centro = m.id_centro INNER JOIN doctores d on c.id_doctor = d.id_doctor";
+    $queryFormulas = "SELECT medicamento,cantidad, tiempo_horas, tiempo_dias, id_formula,u.nombre, u.telefono, u.correo, u.cc, d.nombre_doctor, d.consultorio, m.ubicacion, m.nombre_centro FROM formulas_medicas f INNER JOIN usuarios u on f.id_user = u.id_user INNER JOIN citas c on c.id_user = u.id_user INNER JOIN centro_medico m on c.id_centro = m.id_centro INNER JOIN doctores d on c.id_doctor = d.id_doctor";
     $result = $db->query($queryFormulas);
     return $result;
 }
@@ -52,7 +52,10 @@ function newFormula($medicamento, $cantidad, $tiempo_dias, $tiempo_horas,$id_use
     $db->query($queryFormulas);
 }
 
-if (isset($_POST['nuevo_Formula'])) {
-    newFormula($_POST["medicamento"], $_POST["cantidad"], $_POST["tiempo_dias"], $_POST["tiempo_horas"], $_POST["id_user"]);
+if (isset($_POST['nueva_formula'])) {
+    $db = Conexion::getConnection();
+    $queryFormula = "SELECT id_user FROM usuarios where cc=".$_POST["cc"];
+    $id_user= $db->query($queryFormula);
+    newFormula($_POST["medicamento"], $_POST["cantidad"], $_POST["tiempo_dias"], $_POST["tiempo_horas"], $id_user);
     header("Location:".VIEWS_PATH."admin/admin_medicamentos.php");
 }

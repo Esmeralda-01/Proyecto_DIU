@@ -79,35 +79,20 @@ require_once(CONTROLLER_PATH . "citas_admin.php");
                 </div>
             </div>
             <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop" method >
+<a type="button" class="btn btn-primary mt-3"  href="?id_cita=<?php echo $formula["id_formula"]; ?>&elimina=1">
   Eliminar
-</button>
+        </a>
 
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Eliminar cita médica</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-      ¿Esta seguro que quiere eliminar esta cita médica?
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        <input type="hidden" value="<?php echo $row["id_cita"]; ?>" name="id">
-                            <input type="hidden" name="eliminar">
-        <button name="eliminar"  value="<?php echo $row["id_cita"]; ?>" type="button" class="btn btn-primary">Eliminar</button>
-      </div>
-    </div>
-  </div>
-</div>
+
     <?php
         }
     }
     ?>
-
+<?php  
+    if (isset($_GET["elimina"]) && isset($_GET["id_cita"])) {
+        deleteOneCita($_GET["id_cita"]);
+    }
+    ?>
 
 <?php
 include(VIEWS_PATH . "footer.php");

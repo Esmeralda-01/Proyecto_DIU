@@ -15,7 +15,7 @@ function getAllCitas()
 {
     $db = Conexion::getConnection();
     //crear variable para hacer consultas SQL
-    $queryCitas = "SELECT id_cita, fecha_cita, fecha_agendacion, hora,u.nombre, u.telefono, u.correo, u.cc, d.nombre_doctor, d.consultorio, m.ubicacion, m.nombre_centro FROM citas  c INNER JOIN usuarios u on c.id_user = u.id_user INNER JOIN centro_medico m on c.id_centro = m.id_centro INNER JOIN doctores d on c.id_doctor = d.id_doctor";
+    $queryCitas = "SELECT id_cita, fecha_cita, fecha_agendacion, hora,u.nombre, u.telefono, u.correo, u.cc, d.nombre_doctor, d.consultorio, m.ubicacion, m.nombre_centro FROM citas  c INNER JOIN usuarios u on c.id_user =u.id_user INNER JOIN centro_medico m on c.id_centro = m.id_centro INNER JOIN doctores d on c.id_doctor = d.id_doctor";
     $result = $db->query($queryCitas);
     return $result;
 }

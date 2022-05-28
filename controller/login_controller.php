@@ -14,6 +14,10 @@ if ($result->num_rows > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
         session_start();
         $_SESSION["nombre"] = $row["nombre"];
+        $_SESSION["id_user"] = $row["id_user"];
+        $_SESSION["cc"] = $row["cc"];
+        $_SESSION["telefono"] = $row["telefono"];
+        $_SESSION["correo"] = $row["correo"];
         if ($row["rol"] == 0) { //Usuario con menos privilegios
             header("Location:".VIEWS_PATH."user/user_home.php");
         }
