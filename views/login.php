@@ -13,7 +13,7 @@ include(VIEWS_PATH . "header.php");
 if (isset($_GET["info"])) {
     if ($_GET["info"] == 1) {
 ?>
-        <div class="alert alert-danger d-flex alert-dismissible fade show" role="alert">
+        <div class="alert alert-danger d-flex alert-dismissible fade show" role="alert" >
             <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
                 <use xlink:href="#exclamation-triangle-fill" />
             </svg>
@@ -24,7 +24,7 @@ if (isset($_GET["info"])) {
     }
     if ($_GET["info"] == 2) {
     ?>
-        <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <div class="alert alert-info d-flex alert-dismissible fade show" role="alert">
             <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
                 <use xlink:href="#info-fill" />
             </svg>
