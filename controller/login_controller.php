@@ -12,11 +12,13 @@ $result = $db->query($query);
 if ($result->num_rows > 0) {
     //echo "Datos Correctos";
     while ($row = mysqli_fetch_assoc($result)) {
+        session_start();
+        $_SESSION["nombre"] = $row["nombre"];
         if ($row["rol"] == 0) { //Usuario con menos privilegios
-            header("Location:".VIEWS_PATH."user/home_user.php");
+            header("Location:".VIEWS_PATH."user/user_home.php");
         }
         if ($row["rol"] == 1) { //Administrador
-            header("Location:".VIEWS_PATH."admin/home_admin.php");
+            header("Location:".VIEWS_PATH."admin/admin_home.php");
         }
     }
     //header("Location:".VIEWS_PATH."home_user.php");

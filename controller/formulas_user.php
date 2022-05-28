@@ -13,8 +13,9 @@ require_once(LIBRARIES_PATH . "conexion.php");
 function getAllFormulas()
 {
     $db = Conexion::getConnection();
-    $queryFormula = "SELECT * FROM formulas_medicas";
-    $result = $db->query($queryFormula);
+    //crear variable para hacer consultas SQL
+    $queryFormulas = "SELECT * FROM formulas_medicas";
+    $result = $db->query($queryFormulas);
     return $result;
 }
 
@@ -28,22 +29,16 @@ function getOneFormula($id)
     }
     return null;
 }
+
 function deleteOneFormula($id)
 {
     $db = Conexion::getConnection();
     //crear variable para hacer consultas SQL
-    $queryFormulas = "DELETE FROM formulas WHERE id_formula=" . $id;
+    $queryFormulas = "DELETE FROM formulas_medicas WHERE id_formula=" . $id;
     //echo $queryFormulas;
     $db->query($queryFormulas);
 }
-if (isset($_GET["elimina"]) && isset($_GET["id"])) {
-    deleteOneFormula($_GET["id"]);
-    header("Location:".VIEWS_PATH."admin/admin_medicamentos.php");
-}
-function getAllCitas()
-{
-    $db = Conexion::getConnection();
-    $queryCitas = "SELECT * FROM citas";
-    $result = $db->query($queryCitas);
-    return $result;
+if (isset($_GET["elimina"]) && isset($_GET["id_formula"])) {
+    deleteOneFormula($_GET["id_formula"]);
+    header("Location:".VIEWS_PATH."user/user_medicamentos.php");
 }

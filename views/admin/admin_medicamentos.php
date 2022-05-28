@@ -8,7 +8,7 @@ define('JS_PATH', '../../js/');
 define('IMG_PATH', '../../img/');
 define('CONFIG_PATH', '../../config/');
 include(VIEWS_PATH . "admin/header.php");
-require_once(CONTROLLER_PATH . "doctappdb_controller.php");
+require_once(CONTROLLER_PATH . "formulas_admin.php");
 ?>
 <div id="padre">
     <h1>Formulas medicas</h1>
@@ -76,20 +76,13 @@ require_once(CONTROLLER_PATH . "doctappdb_controller.php");
 
     <?php
     if (isset($_GET["id_formula"]) && !isset($_GET["elimina"])) {
-        //echo $_GET["id"];
+        echo $_GET["id_formula"];
         $result_one_formula = getOneFormula($_GET["id_formula"]);
         //print_r($result_one_viaje);
         while ($row = mysqli_fetch_assoc($result_one_formula)) {
             //print_r($row);
     ?>
-            
-    <?php
-        }
-    }
-    if (isset($_GET["elimina"]) && isset($_GET["id_formula"])) {
-        deleteOneFormula($_GET["id_formula"]);
-    }
-    ?><div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -135,13 +128,20 @@ require_once(CONTROLLER_PATH . "doctappdb_controller.php");
                                 </div>
                                 <div class="row">
                                     <h5>Descripción</h5>
-                                    <p>Medicamento ... tomar ... cada ... horas durante ... días.</p>
+                                    <p>Medicamento <?php echo $fo["medicamento"]; ?> tomar ... cada ... horas durante ... días.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>   
+    <?php
+        }
+    }
+    if (isset($_GET["elimina"]) && isset($_GET["id_formula"])) {
+        deleteOneFormula($_GET["id_formula"]);
+    }
+    ?>
     <div class="modal fade" id="nuevoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">

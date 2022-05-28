@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,10 +32,10 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Nombre usuario
+            <?php echo $_SESSION["nombre"]; ?>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item nombre-empresa" href="#">Cerrar sesión</a></li>
+              <li><a class="dropdown-item nombre-empresa" href="<?php echo VIEWS_PATH; ?>login.php?info=2">Cerrar sesión</a></li>
             </ul>
           </li>
         </ul>

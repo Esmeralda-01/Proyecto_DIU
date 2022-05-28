@@ -36,7 +36,7 @@ if (isset($_GET["info"])) {
 }
 ?>
 <div class="container2">
-    <form action="<?php echo VIEWS_PATH; ?>registro.php" method="POST">
+    <form action="<?php echo CONTROLLER_PATH; ?>login_controller.php" method="POST">
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Correo</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="correo">
