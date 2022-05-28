@@ -53,6 +53,8 @@ function newCita($fecha_cita, $fecha_agendacion, $hora, $id_doctor,$id_centro,$i
 }
 
 if (isset($_POST['nueva_cita'])) {
+    session_start();
+   
    // $db = Conexion::getConnection();
     //$queryCentro = "SELECT id_centro FROM centro_medico where nombre_centro=".$_POST["nombre_cita"];
    // $id_centro= $db->query($queryCentro);
@@ -61,6 +63,6 @@ if (isset($_POST['nueva_cita'])) {
     //$queryDoctor = "SELECT id_doctor FROM doctores where nombre_centro=".$_POST["especializacion"];
    // $id_doctor= $db2->query($queryDoctor);
 //echo $id_doctor;
-    newCita($_POST["fecha_cita"], "SYSDATE", $_POST["hora"], 1, 1, $_SESSION["id_user"]);
-    header("Location:".VIEWS_PATH."user/user_citas_agreagr.php");
+    newCita($_POST["fecha_cita"], "curdate()", $_POST["hora"], $_POST["id_doctor"], $_POST["id_centro"], $_SESSION["id_user"]);
+    header("Location:".VIEWS_PATH."user/user_citas_agregar.php");
 }
